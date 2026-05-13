@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de privacidad · Numen</title>
+  <style>
+    :root {
+      --accent: #FBBF24;
+      --bg: #0C0D18;
+      --surface: #181824;
+      --text: #EDEAFF;
+      --muted: #8B8B95;
+      --border: #2A2A35;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 48px;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 32px;
+      margin: 0 0 8px;
+    }
+    h2 {
+      color: var(--text);
+      font-size: 22px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      color: var(--text);
+      font-size: 17px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+    }
+    li { margin-bottom: 6px; }
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 28px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: var(--accent);
+    }
+    .highlight {
+      background: rgba(251, 191, 36, 0.1);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 28px 20px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Política de privacidad de Numen</h1>
+    <p class="meta">Última actualización: 12 de mayo de 2026</p>
+
+    <p>
+      Esta política describe cómo Numen ("la aplicación", "nosotros") recolecta,
+      almacena y utiliza tu información personal. Numen es una aplicación de
+      gestión de finanzas personales para uso individual y entre familiares o
+      amigos cercanos.
+    </p>
+
+    <div class="highlight">
+      <strong>En resumen:</strong> tus datos viven principalmente en tu propio
+      dispositivo. Una réplica se sincroniza con un servidor personal del
+      desarrollador para que puedas acceder desde múltiples dispositivos.
+      No vendemos, alquilamos ni compartimos tus datos con terceros.
+    </div>
+
+    <h2>1. Datos que recolectamos</h2>
+
+    <h3>1.1 Datos de cuenta</h3>
+    <ul>
+      <li><strong>Correo electrónico</strong>: utilizado para crear y autenticar tu cuenta.</li>
+      <li><strong>Nombre</strong>: utilizado para personalizar la interfaz y mostrar a tus amigos
+        en gastos compartidos.</li>
+      <li><strong>Identificador OAuth de Google</strong> (opcional): si decides iniciar sesión
+        con Google, almacenamos el identificador único que Google asigna a tu cuenta
+        ("subject" del id_token), no tus credenciales de Google.</li>
+      <li><strong>Foto de perfil</strong> (opcional): si la proporcionas mediante Google,
+        guardamos su URL pública.</li>
+    </ul>
+
+    <h3>1.2 Datos financieros personales</h3>
+    <ul>
+      <li>Gastos, ingresos, presupuestos, cuentas y metas de ahorro que tú registras.</li>
+      <li>Categorías y grupos que tú creas.</li>
+      <li>Suscripciones recurrentes que marques.</li>
+      <li>Notas que adjuntes a cada elemento.</li>
+    </ul>
+
+    <h3>1.3 Imágenes y adjuntos</h3>
+    <p>
+      Si decides adjuntar fotografías de tickets, recibos u otros archivos a tus
+      gastos, estas imágenes <strong>se almacenan únicamente en el almacenamiento
+      local de tu dispositivo</strong>. No se suben ni se sincronizan al servidor.
+      Solo el metadato (nombre de archivo, tamaño, fecha) se incluye en la
+      sincronización, no el contenido del archivo.
+    </p>
+
+    <h3>1.4 Datos derivados de gastos compartidos</h3>
+    <p>
+      Si utilizas la funcionalidad de dividir gastos con amigos, los participantes
+      del split (sus nombres y la parte que les corresponde) se almacenan junto
+      al gasto. Si envías una solicitud de gasto compartido a otro usuario de Numen,
+      el contenido de esa solicitud se comparte con esa persona específicamente.
+    </p>
+
+    <h3>1.5 Lo que NO recolectamos</h3>
+    <ul>
+      <li>No usamos servicios de analítica (Google Analytics, Firebase Analytics,
+        Mixpanel, etc.).</li>
+      <li>No usamos herramientas de seguimiento o publicidad.</li>
+      <li>No accedemos a tus contactos, ubicación, calendario, ni otros datos del
+        dispositivo que no estén explícitamente listados arriba.</li>
+      <li>No grabamos audio ni vídeo (excepto cuando tú activas la captura por voz
+        para registrar un gasto, momento en el que el audio se envía cifrado a
+        nuestro servidor solo para transcripción y se descarta inmediatamente).</li>
+    </ul>
+
+    <h2>2. Permisos del dispositivo</h2>
+    <p>Numen solicita los siguientes permisos del sistema únicamente cuando son necesarios:</p>
+    <ul>
+      <li><strong>Cámara</strong>: para fotografiar tickets en la función de captura inteligente.
+        La foto se procesa para extraer el detalle del recibo y se guarda localmente.</li>
+      <li><strong>Galería de fotos</strong>: para que puedas adjuntar imágenes existentes a tus gastos.</li>
+      <li><strong>Micrófono</strong>: para la función opcional de registrar gastos por voz.
+        El audio se envía cifrado al servidor de procesamiento, se transcribe y se descarta.</li>
+      <li><strong>Notificaciones</strong>: para enviarte recordatorios de pago, gastos próximos
+        a vencer y alertas de presupuesto. Solo si activas las notificaciones desde Configuración.</li>
+      <li><strong>Biométrico (huella/rostro/PIN)</strong>: opcional, solo si activas el bloqueo
+        de la aplicación. No se almacena la huella; usamos el sistema de autenticación local
+        del sistema operativo.</li>
+      <li><strong>Internet</strong>: para sincronizar tus datos con el servidor.</li>
+    </ul>
+
+    <h2>3. Cómo almacenamos tus datos</h2>
+
+    <h3>3.1 En tu dispositivo</h3>
+    <p>
+      La mayor parte de tus datos vive en el almacenamiento local de tu dispositivo
+      (AsyncStorage y el sistema de archivos privado de la aplicación). Estos
+      datos solo son accesibles para Numen y se eliminan completamente al desinstalar
+      la aplicación.
+    </p>
+
+    <h3>3.2 En el servidor</h3>
+    <p>
+      Para permitirte acceder a tus datos desde múltiples dispositivos y como
+      respaldo en caso de pérdida del teléfono, se sincroniza una copia de tu
+      información (excepto archivos binarios como imágenes) con una base de datos
+      MongoDB hospedada en infraestructura privada del desarrollador. Esta base
+      de datos:
+    </p>
+    <ul>
+      <li>Es de uso exclusivo de la aplicación Numen.</li>
+      <li>No se comparte con terceros.</li>
+      <li>Está protegida por las medidas de seguridad estándar del servidor donde reside.</li>
+      <li>Las conexiones cliente-servidor están cifradas en tránsito mediante HTTPS/TLS.</li>
+      <li>Cada usuario solo puede acceder a sus propios datos mediante autenticación
+        con token JWT firmado.</li>
+    </ul>
+
+    <h3>3.3 Retención</h3>
+    <p>
+      Mantenemos tus datos mientras tu cuenta esté activa. Si eliminas tu cuenta,
+      todos tus datos en el servidor se borran de forma permanente en un plazo
+      máximo de 24 horas. Los datos locales del dispositivo se eliminan al
+      desinstalar la aplicación.
+    </p>
+
+    <h2>4. Compartición con terceros</h2>
+    <p>
+      <strong>No vendemos, alquilamos ni compartimos tus datos con terceros</strong>,
+      con las siguientes excepciones técnicamente necesarias:
+    </p>
+    <ul>
+      <li><strong>Google</strong>: si optas por iniciar sesión con Google,
+        Google recibe la información necesaria para autenticarte (parte estándar
+        del flujo OAuth 2.0). Nosotros solo recibimos de Google tu correo,
+        nombre y foto de perfil — datos que tú ya autorizas explícitamente al
+        elegir esa opción.</li>
+      <li><strong>Cloudflare</strong>: el tráfico HTTPS entre tu dispositivo y
+        nuestro servidor pasa por un túnel cifrado de Cloudflare. Cloudflare
+        actúa como proxy de red; no tiene acceso al contenido del tráfico cifrado
+        ni a tu información financiera. Ver la
+        <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">política de privacidad de Cloudflare</a>.</li>
+    </ul>
+
+    <h2>5. Tus derechos</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li><strong>Acceder</strong> a tus datos: están visibles dentro de la aplicación en todo momento.</li>
+      <li><strong>Corregir o actualizar</strong> tus datos: directamente desde la interfaz de la app.</li>
+      <li><strong>Exportar</strong> tus datos: puedes solicitar una copia escribiéndonos al
+        correo de contacto (ver sección 8).</li>
+      <li><strong>Eliminar</strong> tu cuenta: desde <em>Configuración → Sesión → Eliminar cuenta</em>.
+        También puedes solicitarlo por correo. La eliminación es irreversible y borra todos
+        tus datos del servidor en un plazo de 24 horas.</li>
+      <li><strong>Revocar permisos</strong>: cualquier permiso del dispositivo (cámara, micrófono,
+        notificaciones) puede ser revocado desde los ajustes de tu sistema operativo.</li>
+    </ul>
+
+    <h2>6. Seguridad</h2>
+    <p>Tomamos medidas razonables para proteger tu información:</p>
+    <ul>
+      <li>Contraseñas almacenadas con hash bcrypt (no almacenamos contraseñas en texto plano).</li>
+      <li>Tokens de sesión guardados en el almacenamiento seguro del sistema (expo-secure-store
+        en Android e iOS).</li>
+      <li>Comunicaciones cifradas con HTTPS/TLS.</li>
+      <li>Autenticación basada en JWT con expiración de 30 días.</li>
+      <li>Bloqueo opcional con huella/rostro/PIN del dispositivo.</li>
+    </ul>
+    <p>
+      Aun así, ninguna transmisión por internet es 100% segura. No podemos garantizar
+      seguridad absoluta, pero hacemos lo razonable para minimizar el riesgo.
+    </p>
+
+    <h2>7. Menores</h2>
+    <p>
+      Numen no está dirigido a menores de 13 años. No recolectamos conscientemente
+      datos de menores. Si eres padre o tutor y crees que tu hijo nos ha proporcionado
+      datos personales sin tu consentimiento, contáctanos para eliminarlos.
+    </p>
+
+    <h2>8. Contacto</h2>
+    <p>
+      Para cualquier pregunta, solicitud de eliminación de datos, o reclamo
+      relacionado con tu privacidad, contacta a:
+    </p>
+    <ul>
+      <li><strong>Desarrollador</strong>: Alejandro Gaviria</li>
+      <li><strong>Email de contacto</strong>: <a href="mailto:service.nexus.gav@gmail.com"></a></li>
+    </ul>
+
+    <h2>9. Cambios a esta política</h2>
+    <p>
+      Esta política puede actualizarse para reflejar cambios en la aplicación o en
+      requisitos legales. Cuando haya cambios significativos, te lo notificaremos
+      dentro de la aplicación. La fecha de "última actualización" al inicio de
+      este documento siempre refleja la versión vigente.
+    </p>
+
+    <h2>10. Ley aplicable</h2>
+    <p>
+      Esta política se rige por las leyes de Colombia. Cualquier disputa que no
+      pueda resolverse amistosamente se someterá a la jurisdicción de los tribunales
+      competentes de [tu ciudad, ej. Cali, Valle del Cauca].
+    </p>
+
+    <div class="footer">
+      Numen · Aplicación de finanzas personales<br>
+      © 2026 [Tu nombre completo]. Todos los derechos reservados.
+    </div>
+  </div>
+</body>
+</html>
